@@ -11,6 +11,15 @@
 &led_strip { chain-length = <27>; };
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        MACSTOP {
+            bindings = <&kp LC(LG(Q))>;
+            key-positions = <0 24>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
